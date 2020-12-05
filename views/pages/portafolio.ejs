@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflective</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >
+</head>
+
+<body id = "bodyOtros">
+    <!----------------------------------NavBar----------------------------------->
+    <section id="nav-bar">
+      <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="#"><img src="/assets/logo.png"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/portafolio">Portafolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/servicios">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"href="/nosotros" >Nosotros</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="/contactanos">Contactanos</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown" style = "background-color: black">
+                      <%-include(content) %>
+                      <!-- <a class="dropdown-item" href="/login">Iniciar sesion</a>
+                      <a class="dropdown-item" href="/logout">Cerrar sesion</a> -->
+                  </div>
+                </li> 
+            </ul>
+          </div>
+        </nav>
+  </section>
+
+  
+   <!----------------------------------imagen principal----------------------------------->
+
+   <header >
+    
+    <div class="overlay" id="bkgPortafolio">
+      <h1 id="tituloServiciosPagina" style="padding-top: 13%; color: white;">
+        PORTAFOLIO
+      </h1>
+    </div>
+    <!--<img  source src="assets/equipo.jpg" >-->
+    
+  </header>
+  
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Page Heading -->
+    <h1 class="my-4 text-white">Proyectos
+     
+    </h1>
+
+    <!-- Project One -->
+    <div class="row text-white">
+      <div class="col-md-7 ">
+        <a href="#">
+          <img class="img-fluid rounded mb-3 mb-md-0" src="/assets/cuarto.png" alt="">
+        </a>
+      </div>
+      <div class="col-md-5">
+        <h3>Recorrido virtual para desarrollo de un departamento</h3>
+        <p>Proyecto en donde se modelo una casa por medio de planos, en donde también se incluyeron muebles para poder mostrar su interior por medio de realidad aumentada o realidad virtual como un recorrido
+        </p>
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <hr>
+
+    <!-- Project Two -->
+    <div class="row text-white">
+      <div class="col-md-7">
+        <a href="#">
+          <img class="img-fluid rounded mb-3 mb-md-0" src="/assets/jirafa.png" alt="">
+        </a>
+      </div>
+      <div class="col-md-5">
+        <h3 style="color: #eeeeee;" >Modelo 3d de girafa</h3>
+        <p style="color: #eeeeee;" >Proyecto enfocado a la visualización de animales animados y modelados en 3d. </p>
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <hr>
+
+    <!-- Project Three -->
+    <div class="row text-white">
+      <div class="col-md-7">
+        <a href="#">
+          <img class="img-fluid rounded mb-3 mb-md-0" src="/assets/casa.jpeg" alt="">
+        </a>
+      </div>
+      <div class="col-md-5">
+        <h3 style="color: #cccccc;" >Medlo 3D de un departamento para AR</h3>
+        <p style="color: #cccccc;">Proyecto de realiad aumentada en la que se creo un departamento a partir de los planos. Se trabajo en conjunto con el cliente para el diseño interior</p>
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <hr>
+
+    <!-- Project Four -->
+    <div class="row text-dark">
+
+      <div class="col-md-7">
+        <a href="#">
+          <img class="img-fluid rounded mb-3 mb-md-0" src="/assets/pit.png" alt="">
+        </a>
+      </div>
+      <div class="col-md-5">
+        <h3 style="color: black;">Aplicacion VR educativa</h3>
+        <p style="color: black;">Proyecto trabajado en conjunto con el Tecnológico de Monterrey para la creación de una aplicación educativa en realidad virtual enfocada en la materia de física. Se creó el campus en realidad virtual para usarlo de locación.
+        </p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row text-dark">
+
+      <div class="col-md-7">
+        <a href="#">
+          <img class="img-fluid rounded mb-3 mb-md-0" src="/assets/sushi.jpeg" alt="">
+        </a>
+      </div>
+      <div class="col-md-5">
+        <h3 style="color: black;">Modelo 3D de comida para AR</h3>
+        <p style="color: black;">Proyecto enfocado en la visualizacion de menus en realidad aumentada por medio de un aplicación móvil</p>
+      </div>
+    </div>
+    <!-- /.row -->
+
+
+  </div>
+  <!-- /.container -->
+
+
+
+</body>
+
+<footer class="page-footer font-small blue pt-4">
+
+  <!-- Footer Links -->
+  <div >
+
+    <!-- Grid row -->
+    <div class="row" style="display: flex; justify-content:center;">
+
+      <!-- Grid column -->
+     
+      <!-- Grid column -->
+
+      <hr ">
+
+      <!-- Grid column -->
+      <div >
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Correo:</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a >reflectivestudio.vr@gmail.com</a>
+          </li>
+          
+        
+        </ul>
+        <h5 class="text-uppercase">Copyright:</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a >ReflectiveStudio2020</a>
+          </li>
+          
+        
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3" style="padding-left: 15%;">
+
+
+        <ul class="list-unstyled">
+          <li>
+     
+            <a href="https://www.instagram.com/reflectivestudio.vr/" class="fa fa-instagram"></a>
+            <a href="https://www.instagram.com/reflectivestudio.vr/">instagram</a>
+
+          </li>
+          <li>
+            <a href="https://www.facebook.com/ReflectiveStudio" class="fa fa-facebook"></a>
+            <a href="https://www.facebook.com/ReflectiveStudio" >facebook</a>
+          </li>
+          
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+ 
+  <!-- Copyright -->
+
+</footer>
+
+</html>
